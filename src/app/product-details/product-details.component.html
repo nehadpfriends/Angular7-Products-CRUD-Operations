@@ -1,0 +1,10 @@
+
+    <div class="card" style="width: 18rem;" *ngIf="product">
+        <div class="card-body">
+          <h5 class="card-title">{{product.name | uppercase}}</h5>
+          <p class="card-subtitle mb-2 text-muted">{{ product.cost | currency: 'INR'}}</p>
+          <p class="card-text">{{ product.description }}</p>
+          <a [routerLink]="['edit']" class="card-link">Edit</a>
+          <a (click)="deleteProduct()" class="card-link">Delete</a>
+        </div>
+      </div>

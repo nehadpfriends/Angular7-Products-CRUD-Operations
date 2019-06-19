@@ -1,0 +1,34 @@
+<div class="contanier">
+  <div class="row">
+    <div class="col-md-12" >
+      <form [formGroup]="productForm">
+      <div class="form-group" >
+          <label for="name">Name</label>
+          <input type="text" formControlName="name" id="name" class="form-control">
+      </div>
+      <div class="form-group">
+          <label for="phone">Mobile</label>
+          <input type="number" formControlName="phone" id="phone" class="form-control">
+      </div>
+      <div class="form-group">
+          <label for="cost">Cost</label>
+          <input type="number" formControlName="cost" id="cost" class="form-control">
+      </div>
+      <div class="form-group">
+          <label for="description">Description</label>
+          <textarea type="text" formControlName="description" id="description" class="form-control" cols="6"></textarea>
+      </div>
+    </form>
+    </div>
+  </div>
+  <div class="row">
+      <div class="col-md-12">
+        <button
+          type="submit"
+          class="btn btn-success" type="button" (click)="onSubmit()">Save</button> &nbsp;
+          <button type="button" class="btn btn-danger" (click)="onCancel()">
+            Cancel
+          </button>
+      </div>
+    </div>
+</div>

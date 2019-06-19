@@ -1,0 +1,19 @@
+<a
+  style="cursor: pointer;"
+  [routerLink]="[index]"
+  routerLinkActive="active"
+  class="list-group-item clearfix"
+  >
+  <span class="float-left">
+    <span class="list-group-item-heading">{{ product.name | uppercase}}</span>
+    <span class="list-group-item-text">&nbsp; &nbsp;{{ product.phone }}</span>
+  </span>
+  <span class="float-right">
+        {{product.cost | currency: 'INR'}} 
+      </span>
+</a>
+
+
+
+
+
